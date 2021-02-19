@@ -1,0 +1,101 @@
+﻿<Window Name="MyStamina" x:Class="Keyboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Keyboard"
+        mc:Ignorable="d"
+        Title="My version of Stamina" Height="250" Width="600">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF016FA2" Offset="0"/>
+                <GradientStop Color="#FFEEE525" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="startButton" Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="2" Content="Start" Margin="5,5,5,5" FontSize="14" FontWeight="Bold" Background="#FF50D443" BorderBrush="#FF291414" FontFamily="Tempus Sans ITC" Click="startButtonClick" ></Button>
+        <Button Name="stopButton" IsEnabled="false" Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Content="Stop" Margin="5,5,5,5"  FontSize="14" FontWeight="Bold" Background="#FFE46843" BorderBrush="#FF0E0909" FontFamily="Tempus Sans ITC" Click="stopButtonClick" ></Button>
+        <Label Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Speed:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" Foreground="#FFFDF9F9" FontFamily="Kristen ITC" FontSize="14"/>
+        <Label Name="labelSpeed" Grid.Row ="0" Grid.Column="3" Grid.ColumnSpan="3" Content="0" Visibility="Hidden" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" FontSize="14" Foreground="#FFFDF9F9"/>
+        <Label Grid.Row ="0" Grid.Column="10" Grid.ColumnSpan="2" Content="Fails:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" FontSize="14" Foreground="#FFFDF9F9" FontFamily="Kristen ITC"/>
+        <Label Name="labelFails" Grid.Row ="0" Grid.Column="12" Content="0" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" FontSize="14" Foreground="#FFFDF9F9"/>
+        <Grid Name="textGrid" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="20">
+            <Grid.RowDefinitions>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
+    </Grid>
+</Window>
