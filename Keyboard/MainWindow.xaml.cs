@@ -31,6 +31,32 @@ namespace Keyboard
         private int _failCounter = 0;
         private int _speedCounter = 0;
         private bool _progIsActive = false;
+        private Window1 w1;
+
+        public int FailCounter
+        {
+            get
+            {
+                return _failCounter;
+            }
+        }
+
+        public int SpeedCounter
+        {
+            get
+            {
+                return _speedCounter;
+            }
+        }
+
+        public int ChronCounter
+        {
+            get
+            {
+                return _chronCounter;
+            }
+        }
+
 
         public MainWindow()
         {
@@ -48,14 +74,14 @@ namespace Keyboard
                 finishProgram();
             }
 
-            if(codeascii >= 65 && codeascii <= 90)
+            if (codeascii >= 65 && codeascii <= 90)
             {
                 if (chr == _inputstr[_position] && _progIsActive && _position < 40)
                 {
                     TextBlock block = new TextBlock();
                     block.Background = Brushes.Green;
                     block.Text = chr;
-                    
+
                     textGrid.Children.Add(block);
                     Grid.SetRow(block, 1);
                     Grid.SetColumn(block, _position);
@@ -80,6 +106,8 @@ namespace Keyboard
             stopButton.IsEnabled = false;
             _progtimer.Stop();
             clearTextGrid();
+            w1 = new Window1(this);
+            w1.Show();
         }
 
         private void startButtonClick(object sender, RoutedEventArgs e)
@@ -153,6 +181,9 @@ namespace Keyboard
         private void stopButtonClick(object sender, RoutedEventArgs e)
         {
             finishProgram();
+            //Window1 resultWindow = new Window1();
+            //resultWindow.Show();
         }
+
     }
 }
