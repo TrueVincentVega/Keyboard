@@ -42,7 +42,7 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Button Name="startButton" Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="2" Content="Start" Margin="5,5,5,5" FontSize="14" FontWeight="Bold" Background="#FF50D443" BorderBrush="#FF291414" FontFamily="Tempus Sans ITC" Click="startButtonClick" ></Button>
+        <Button Name="startButton" Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="3" Content="Start" Margin="5,5,5,5" FontSize="14" FontWeight="Bold" Background="#FF50D443" BorderBrush="#FF291414" FontFamily="Tempus Sans ITC" Click="startButtonClick" ></Button>
         <Button Name="stopButton" IsEnabled="false" Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Content="Stop" Margin="5,5,5,5"  FontSize="14" FontWeight="Bold" Background="#FFE46843" BorderBrush="#FF0E0909" FontFamily="Tempus Sans ITC" Click="stopButtonClick" ></Button>
         <Label Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Speed:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" Foreground="#FFFDF9F9" FontFamily="Kristen ITC" FontSize="14"/>
         <Label Name="labelSpeed" Grid.Row ="0" Grid.Column="3" Grid.ColumnSpan="3" Content="0" Visibility="Hidden" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"  FontWeight="Bold" FontSize="14" Foreground="#FFFDF9F9"/>
